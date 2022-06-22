@@ -3,6 +3,7 @@ import Script from "next/script";
 export default function Home(props) {
   console.log(props.dataWeb.website.about.subtitle);
   console.log(props.dataWeb.website.project.image[0].alt);
+  console.log(props.dataWeb.website.navbar.list[0].name);
   return (
     <>
       <div>
@@ -16,13 +17,15 @@ export default function Home(props) {
               <a href="#page-top">{props.dataWeb.website.navbar.title}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#page-top">Home</a>
+              <a href="#page-top">
+                {props.dataWeb.website.navbar.list[0].name}
+              </a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#about">About</a>
+              <a href="#about">{props.dataWeb.website.navbar.list[1].name}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#portfolio">Project</a>
+              <a href="#project">{props.dataWeb.website.navbar.list[2].name}</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +68,7 @@ export default function Home(props) {
             </div>
           </div>
         </section>
-        <section className="content-section" id="portfolio">
+        <section className="content-section" id="project">
           <div className="container px-4 px-lg-4">
             <div className="content-section-heading text-center">
               <h2 className="project mb-5">Project</h2>
