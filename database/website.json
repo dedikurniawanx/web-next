@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "title": "Navigation",
+    "list": [
+      {
+        "name": "Home",
+        "href": "#page-top"
+      },
+      {
+        "name": "About",
+        "href": "#about"
+      },
+      {
+        "name": "Home",
+        "href": "#portofolio"
+      }
+    ]
+  },
+ 
+    "header": {
+      "nama": "  I'm Dedi Kurniawan",
+      "subnama": "Front-End Developer"
+    },
+    "about": {
+      "title": "About Me",
+      "image": {"url": "mulyadi-kL4coQHVj_A-unsplash.webp", "alt": "profil image"},
+      "subtitle": "On Procces"
+    },
+    "project": {
+      "title": "Project",
+      "image" : [
+        {
+          "url": "Gomagame.webp",
+          "alt":"Goma Game"
+        },
+        {
+          "url": "Brainlab.webp",
+          "alt":"Goma TV"
+        }
+      ]
+    }
+ 
+}
