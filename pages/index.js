@@ -5,6 +5,7 @@ export default function Home(props) {
   console.log(props.dataWeb.website.project.image[0].alt);
   console.log(props.dataWeb.website.navbar.list[0].name);
   console.log(props.dataWeb.website.about.title);
+  console.log(props.dataWeb.website.footer.icon[0].url);
   return (
     <>
       <div>
@@ -76,7 +77,7 @@ export default function Home(props) {
                 {props.dataWeb.website.project.title}
               </h2>
             </div>
-            <div className="row g-2">
+            <div className="row">
               <div className="col-lg-6">
                 <a className="portfolio-item" href="#!">
                   <div className="caption"></div>
@@ -107,7 +108,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white mr-3"
-                  href="#!"
+                  href={props.dataWeb.website.footer.icon[0].url}
                 >
                   <i className="icon-social-facebook" />
                 </a>
@@ -115,7 +116,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white mr-3"
-                  href="#!"
+                  href={props.dataWeb.website.footer.icon[1].url}
                 >
                   <i className="icon-social-twitter" />
                 </a>
@@ -123,7 +124,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white"
-                  href="https://github.com/dedikurniawanx"
+                  href={props.dataWeb.website.footer.icon[2].url}
                 >
                   <i className="icon-social-github" />
                 </a>

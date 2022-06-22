@@ -41,5 +41,21 @@
         "alt": "Brain Lab"
       }
     ]
+  },
+  "footer": {
+    "icon": [
+      {
+        "icon": "facebook",
+        "url": "https://www.facebook.com/"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com/login"
+      },
+      {
+        "icon": "github",
+        "url": "https://github.com/dedikurniawanx"
+      }
+    ]
   }
 }
