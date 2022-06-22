@@ -11,7 +11,7 @@ export default function Document() {
         />
         <meta name="description" content />
         <meta name="author" content />
-        <title>My Portfolio</title>
+        <title>Dedi Kurniawan</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"

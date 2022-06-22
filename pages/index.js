@@ -31,7 +31,7 @@ export default function Home(props) {
             <h1 className="mb-1 text-white">
               Hello,{props.dataWeb.website.header.nama}
             </h1>
-            <h3 className="mb-5 text-white">
+            <h3 className="text-white">
               <em>Front-End Developer</em>
             </h3>
           </div>
@@ -40,9 +40,9 @@ export default function Home(props) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <h2>About Me</h2>
+                <h2 className="pb-5">About Me</h2>
                 <div className="row justify-content-center">
-                  <div className="col mt-5 mb-4">
+                  <div className="col pb-5">
                     <img
                       src={`assets/img/${props.dataWeb.website.about.image.url}`}
                       alt
@@ -58,7 +58,7 @@ export default function Home(props) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <p className="puisi px-5 mt-5">
+                <p className="captabout pt-5">
                   {props.dataWeb.website.about.subtitle}
                 </p>
               </div>
@@ -73,9 +73,7 @@ export default function Home(props) {
             <div className="row g-2">
               <div className="col-lg-6">
                 <a className="portfolio-item" href="#!">
-                  <div className="caption">
-                    <div className="caption-content"></div>
-                  </div>
+                  <div className="caption"></div>
                   <img
                     className="img-fluid"
                     src={`assets/img/${props.dataWeb.website.project.image[0].url}`}
@@ -85,9 +83,7 @@ export default function Home(props) {
               </div>
               <div className="col-lg-6">
                 <a className="portfolio-item" href="#!">
-                  <div className="caption">
-                    <div className="caption-content"></div>
-                  </div>
+                  <div className="caption"></div>
                   <img
                     className="img-fluid"
                     src={`assets/img/${props.dataWeb.website.project.image[1].url}`}
@@ -99,9 +95,9 @@ export default function Home(props) {
           </div>
         </section>
         {/* Footer*/}
-        <footer className="footer text-center bg-dark">
+        <footer className="footer text-center">
           <div className="container">
-            <ul className="list-inline mb-5">
+            <ul className="list-inline">
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white mr-3"
