@@ -4,6 +4,7 @@ export default function Home(props) {
   console.log(props.dataWeb.website.about.subtitle);
   console.log(props.dataWeb.website.project.image[0].alt);
   console.log(props.dataWeb.website.navbar.list[0].name);
+  console.log(props.dataWeb.website.about.title);
   return (
     <>
       <div>
@@ -43,7 +44,7 @@ export default function Home(props) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <h2 className="pb-5">About Me</h2>
+                <h2 className="pb-5">{props.dataWeb.website.about.title}</h2>
                 <div className="row justify-content-center">
                   <div className="col pb-5">
                     <img
@@ -71,7 +72,9 @@ export default function Home(props) {
         <section className="content-section" id="project">
           <div className="container px-4 px-lg-4">
             <div className="content-section-heading text-center">
-              <h2 className="project mb-5">Project</h2>
+              <h2 className="project mb-5">
+                {props.dataWeb.website.project.title}
+              </h2>
             </div>
             <div className="row g-2">
               <div className="col-lg-6">
