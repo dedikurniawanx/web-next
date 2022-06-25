@@ -1,11 +1,7 @@
 import Script from "next/script";
 
-export default function Home(props) {
-  console.log(props.dataWeb.website.about.subtitle);
-  console.log(props.dataWeb.website.project.image[0].alt);
-  console.log(props.dataWeb.website.navbar.list[0].name);
-  console.log(props.dataWeb.website.about.title);
-  console.log(props.dataWeb.website.footer.icon[0].url);
+export default function Home({ dataWeb }) {
+  console.log(dataWeb.dataWeb);
   return (
     <>
       <div>
@@ -16,26 +12,22 @@ export default function Home(props) {
         <nav id="sidebar-wrapper">
           <ul className="sidebar-nav">
             <li className="sidebar-brand">
-              <a href="#page-top">{props.dataWeb.website.navbar.title}</a>
+              <a href="#page-top">{dataWeb.dataWeb[0].title}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#page-top">
-                {props.dataWeb.website.navbar.list[0].name}
-              </a>
+              <a href="#page-top">{dataWeb.dataWeb[0].list[0].name}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#about">{props.dataWeb.website.navbar.list[1].name}</a>
+              <a href="#about">{dataWeb.dataWeb[0].list[1].name}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#project">{props.dataWeb.website.navbar.list[2].name}</a>
+              <a href="#project">{dataWeb.dataWeb[0].list[2].name}</a>
             </li>
           </ul>
         </nav>
         <header className="masthead d-flex align-items-center">
           <div className="container px-4 px-lg-5 text-center">
-            <h1 className="mb-1 text-white">
-              Hello,{props.dataWeb.website.header.nama}
-            </h1>
+            <h1 className="mb-1 text-white">Hello,{dataWeb.dataWeb[1].nama}</h1>
             <h3 className="text-white">
               <em>Front-End Developer</em>
             </h3>
@@ -45,11 +37,11 @@ export default function Home(props) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <h2 className="pb-5">{props.dataWeb.website.about.title}</h2>
+                <h2 className="pb-5">{dataWeb.dataWeb[2].title}</h2>
                 <div className="row justify-content-center">
                   <div className="col pb-5">
                     <img
-                      src={`assets/img/${props.dataWeb.website.about.image.url}`}
+                      src={`assets/img/${dataWeb.dataWeb[2].image.url}`}
                       alt
                       width="200px"
                       height="200px"
@@ -63,9 +55,7 @@ export default function Home(props) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <p className="captabout pt-5">
-                  {props.dataWeb.website.about.subtitle}
-                </p>
+                <p className="captabout pt-5">{dataWeb.dataWeb[2].subtitle}</p>
               </div>
             </div>
           </div>
@@ -73,9 +63,7 @@ export default function Home(props) {
         <section className="content-section" id="project">
           <div className="container px-4 px-lg-4">
             <div className="content-section-heading text-center">
-              <h2 className="project mb-5">
-                {props.dataWeb.website.project.title}
-              </h2>
+              <h2 className="project mb-5">{dataWeb.dataWeb[3].title}</h2>
             </div>
             <div className="row">
               <div className="col-lg-6">
@@ -83,8 +71,8 @@ export default function Home(props) {
                   <div className="caption"></div>
                   <img
                     className="img-fluid"
-                    src={`assets/img/${props.dataWeb.website.project.image[0].url}`}
-                    alt={props.dataWeb.website.project.image[0].alt}
+                    src={`assets/img/${dataWeb.dataWeb[3].image[0].url}`}
+                    alt={dataWeb.dataWeb[3].image[0].alt}
                   />
                 </a>
               </div>
@@ -93,8 +81,8 @@ export default function Home(props) {
                   <div className="caption"></div>
                   <img
                     className="img-fluid"
-                    src={`assets/img/${props.dataWeb.website.project.image[1].url}`}
-                    alt={props.dataWeb.website.project.image[1].alt}
+                    src={`assets/img/${dataWeb.dataWeb[3].image[1].url}`}
+                    alt={dataWeb.dataWeb[3].image[1].alt}
                   />
                 </a>
               </div>
@@ -108,7 +96,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white mr-3"
-                  href={props.dataWeb.website.footer.icon[0].url}
+                  href={dataWeb.dataWeb[4].icon[0].url}
                 >
                   <i className="icon-social-facebook" />
                 </a>
@@ -116,7 +104,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white mr-3"
-                  href={props.dataWeb.website.footer.icon[1].url}
+                  href={dataWeb.dataWeb[4].icon[1].url}
                 >
                   <i className="icon-social-twitter" />
                 </a>
@@ -124,7 +112,7 @@ export default function Home(props) {
               <li className="list-inline-item">
                 <a
                   className="social-link rounded-circle text-white"
-                  href={props.dataWeb.website.footer.icon[2].url}
+                  href={dataWeb.dataWeb[4].icon[2].url}
                 >
                   <i className="icon-social-github" />
                 </a>
@@ -145,7 +133,7 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-  const dataResponse = await fetch("http://localhost:3000/api/website");
+  const dataResponse = await fetch("http://localhost:5000");
   const dataJson = await dataResponse.json();
   return {
     props: {
