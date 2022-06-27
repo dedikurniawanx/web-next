@@ -1,7 +1,6 @@
 import Script from "next/script";
 
 export default function Home({ dataWeb }) {
-  console.log(dataWeb.dataWeb);
   return (
     <>
       <div>
@@ -133,7 +132,7 @@ export default function Home({ dataWeb }) {
 }
 
 export async function getServerSideProps() {
-  const dataResponse = await fetch("http://localhost:5000");
+  const dataResponse = await fetch("https://backend-gweh.herokuapp.com/");
   const dataJson = await dataResponse.json();
   return {
     props: {
