@@ -11655,7 +11655,7 @@ html {
 }
 
 .content-section {
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 5rem;
 }
 
@@ -11944,7 +11944,7 @@ footer.footer .social-link:hover {
 .about {
   background-color: black;
   color: white;
-  height: 650px;
+  height: 640px;
 }
 
 /* .captabout {
