@@ -66,6 +66,7 @@ export default function Home({ dataWeb }) {
             </div>
             <div className="row">
               <div className="col-lg-6">
+                <h3 className="text-center">Goma Game</h3>
                 <a className="portfolio-item" href="#!">
                   <div className="caption"></div>
                   <img
@@ -75,7 +76,9 @@ export default function Home({ dataWeb }) {
                   />
                 </a>
               </div>
+
               <div className="col-lg-6">
+                <h3 className="text-center">Brain Lab</h3>
                 <a className="portfolio-item" href="#!">
                   <div className="caption"></div>
                   <img
