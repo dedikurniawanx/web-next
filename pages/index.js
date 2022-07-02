@@ -28,7 +28,7 @@ export default function Home({ dataWeb }) {
           <div className="container px-4 px-lg-5 text-center">
             <h1 className="mb-1 text-white">Hello,{dataWeb.dataWeb[1].nama}</h1>
             <h3 className="text-white">
-              <em>Front-End Developer</em>
+              <em>{dataWeb.dataWeb[1].subnama}</em>
             </h3>
           </div>
         </header>
