@@ -64,34 +64,6 @@ export default function Home({ dataWeb }) {
             <div className="content-section-heading text-center">
               <h2 className="project mb-5">{dataWeb.dataWeb[3].title}</h2>
             </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <h3 className="text-center">Goma Game</h3>
-                <a
-                  className="portfolio-item"
-                  href="https://gomagame.netlify.app/"
-                >
-                  <div className="caption"></div>
-                  <img
-                    className="img-fluid"
-                    src={`assets/img/${dataWeb.dataWeb[3].image[0].url}`}
-                    alt={dataWeb.dataWeb[3].image[0].alt}
-                  />
-                </a>
-              </div>
-
-              <div className="col-lg-6 ">
-                <h3 className="text-center">Brain Lab</h3>
-                <a className="portfolio-item" href="#!">
-                  <div className="caption"></div>
-                  <img
-                    className="img-fluid"
-                    src={`assets/img/${dataWeb.dataWeb[3].image[1].url}`}
-                    alt={dataWeb.dataWeb[3].image[1].alt}
-                  />
-                </a>
-              </div>
-            </div>
           </div>
         </section>
         {/* Footer*/}
