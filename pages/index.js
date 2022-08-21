@@ -4,7 +4,6 @@ export default function Home({ dataWeb }) {
   return (
     <>
       <div>
-        {/* Navigation*/}
         <a className="menu-toggle rounded" href="">
           <i className="fas fa-bars" />
         </a>
@@ -27,9 +26,7 @@ export default function Home({ dataWeb }) {
         <header className="masthead d-flex align-items-center">
           <div className="container px-4 px-lg-5 text-center">
             <h1 className="mb-1 text-white">Hello,{dataWeb.dataWeb[1].nama}</h1>
-            <h3 className="text-white">
-              <em>{dataWeb.dataWeb[1].subnama}</em>
-            </h3>
+            <p className="text-white fs-4">{dataWeb.dataWeb[1].subnama}</p>
           </div>
         </header>
         <section id="about" className="about py-4">
@@ -59,38 +56,6 @@ export default function Home({ dataWeb }) {
             </div>
           </div>
         </section>
-        {/* Footer*/}
-        <footer className="footer text-center">
-          <div className="container">
-            <ul className="list-inline">
-              <li className="list-inline-item">
-                <a
-                  className="social-link rounded-circle text-white mr-3"
-                  href={dataWeb.dataWeb[4].icon[0].url}
-                >
-                  <i className="icon-social-facebook" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="social-link rounded-circle text-white mr-3"
-                  href={dataWeb.dataWeb[4].icon[1].url}
-                >
-                  <i className="icon-social-twitter" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="social-link rounded-circle text-white"
-                  href={dataWeb.dataWeb[4].icon[2].url}
-                >
-                  <i className="icon-social-github" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-
         {/* Scroll to Top Button*/}
         <a className="scroll-to-top rounded" href="#page-top">
           <i className="fas fa-angle-up" />
