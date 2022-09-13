@@ -44,6 +44,14 @@ export default function Home({ dataWeb }) {
                       className="rounded-circle"
                     />
                   </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum gravida interdum enim id malesuada. Vestibulum
+                    pharetra sapien id justo rhoncus tempor. Aliquam quis
+                    elementum est. Phasellus libero diam, bibendum ut eros
+                    condimentum, vestibulum sagittis leo. Nulla facilisi. Etiam
+                    lectus ligula, facilisis et pulvinar vel, mollis ac odio.
+                  </p>
                 </div>
               </div>
             </div>
