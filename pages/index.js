@@ -56,6 +56,37 @@ export default function Home({ dataWeb }) {
             </div>
           </div>
         </section>
+        {/* Footer*/}
+        <footer className="footer text-center">
+          <div className="container">
+            <ul className="list-inline">
+              <li className="list-inline-item">
+                <a
+                  className="social-link rounded-circle text-white mr-3"
+                  href={dataWeb.dataWeb[4].icon[0].url}
+                >
+                  <i className="icon-social-facebook" />
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  className="social-link rounded-circle text-white mr-3"
+                  href={dataWeb.dataWeb[4].icon[1].url}
+                >
+                  <i className="icon-social-twitter" />
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  className="social-link rounded-circle text-white"
+                  href={dataWeb.dataWeb[4].icon[2].url}
+                >
+                  <i className="icon-social-github" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
         {/* Scroll to Top Button*/}
         <a className="scroll-to-top rounded" href="#page-top">
           <i className="fas fa-angle-up" />
