@@ -26,7 +26,7 @@ export default function Home({ dataWeb }) {
         <header className="masthead d-flex align-items-center">
           <div className="container px-4 px-lg-5 text-center">
             <h1 className="mb-1 text-white">Hello,{dataWeb.dataWeb[1].nama}</h1>
-            <p className="text-white fs-4">{dataWeb.dataWeb[1].subnama}</p>
+            <p className="text-white fs-5">{dataWeb.dataWeb[1].subnama}</p>
           </div>
         </header>
         <section id="about" className="about py-4">
