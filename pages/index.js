@@ -64,6 +64,13 @@ export default function Home({ dataWeb }) {
             </div>
           </div>
         </section>
+        <section className="content-section" id="project">
+          <div className="container px-4 px-lg-4">
+            <div className="content-section-heading text-center">
+              <h2 className="project mb-5">{dataWeb.dataWeb[3].title}</h2>
+            </div>
+          </div>
+        </section>
         {/* Footer*/}
         <footer className="footer text-center">
           <div className="container">
