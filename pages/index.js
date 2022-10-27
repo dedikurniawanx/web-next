@@ -10,16 +10,16 @@ export default function Home({ dataWeb }) {
         <nav id="sidebar-wrapper">
           <ul className="sidebar-nav">
             <li className="sidebar-brand">
-              <a href="#page-top">{dataWeb.dataWeb[0].title}</a>
+              <a href="#page-top">{dataWeb.dataWeb[2].title}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#page-top">{dataWeb.dataWeb[0].list[0].name}</a>
+              <a href="#page-top">{dataWeb.dataWeb[2].list[0].name}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#about">{dataWeb.dataWeb[0].list[1].name}</a>
+              <a href="#about">{dataWeb.dataWeb[2].list[1].name}</a>
             </li>
             <li className="sidebar-nav-item">
-              <a href="#project">{dataWeb.dataWeb[0].list[2].name}</a>
+              <a href="#project">{dataWeb.dataWeb[2].list[2].name}</a>
             </li>
           </ul>
         </nav>
@@ -33,11 +33,11 @@ export default function Home({ dataWeb }) {
           <div className="container">
             <div className="row text-center">
               <div className="col">
-                <h2 className="pb-5">{dataWeb.dataWeb[2].title}</h2>
+                <h2 className="pb-5">{dataWeb.dataWeb[4].title}</h2>
                 <div className="row justify-content-center">
                   <div className="col pb-5">
                     <img
-                      src={`assets/img/${dataWeb.dataWeb[2].image.url}`}
+                      src={`assets/img/${dataWeb.dataWeb[4].image.url}`}
                       alt
                       width="200px"
                       height="200px"
