@@ -71,7 +71,7 @@ export default function Home() {
                 <img src="assets/img/ultramen.webp" className="img-fluid" alt />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content">
-                <h3>UI/UX Designer &amp; Web Developer.</h3>
+                <h3>Designer &amp; Web Developer</h3>
                 <p className="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna
@@ -82,8 +82,9 @@ export default function Home() {
                     <ul>
                       <li>
                         <i className="bi bi-chevron-right" />
-                        <strong>Birthday:</strong> <span>11 June 2001</span>
+                        <strong>Degree:</strong> <span>Junior</span>
                       </li>
+
                       <li>
                         <i className="bi bi-chevron-right" />
                         <strong>Website:</strong> <span>www.example.com</span>
@@ -94,30 +95,31 @@ export default function Home() {
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />
-                        <strong>City:</strong>
-                        <span>Banyuwangi, Jawatimur, Indonesia</span>
+                        <strong>Email:</strong>
+                        <span>email@example.com</span>
                       </li>
                     </ul>
                   </div>
                   <div className="col-lg-6">
                     <ul>
                       <li>
+                        <i className="bi bi-chevron-right" />
+                        <strong>Birthday:</strong> <span>11 June 2001</span>
+                      </li>
+                      <li>
+                        <i className="bi bi-chevron-right" />
+                        <strong>City:</strong>
+                        <span>Banyuwangi, Jawatimur, Indonesia</span>
+                      </li>
+                      <li>
                         <i className="bi bi-chevron-right" />{" "}
                         <strong>Age:</strong>
                         <span>21</span>
                       </li>
+
                       <li>
                         <i className="bi bi-chevron-right" />
-                        <strong>Degree:</strong> <span>Junior</span>
-                      </li>
-                      <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>PhEmailone:</strong>
-                        <span>email@example.com</span>
-                      </li>
-                      <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>Freelance:</strong> <span>Available</span>
+                        <strong>Freelance:</strong> <span>-</span>
                       </li>
                     </ul>
                   </div>
@@ -141,13 +143,13 @@ export default function Home() {
               <div className="col-lg-12">
                 <div className="progress">
                   <span className="skill">
-                    HTML <i className="val">80%</i>
+                    HTML <i className="val">70%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={100}
+                      aria-valuenow={70}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
@@ -161,7 +163,7 @@ export default function Home() {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={90}
+                      aria-valuenow={60}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
@@ -175,21 +177,7 @@ export default function Home() {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={75}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Microsoft Office Word <i className="val">65%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={75}
+                      aria-valuenow={40}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />

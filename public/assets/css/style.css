@@ -392,7 +392,7 @@ section {
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -401,7 +401,7 @@ section {
   background: #0563bb;
   bottom: 0;
   left: calc(50% - 20px);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
