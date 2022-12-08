@@ -538,6 +538,9 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
+.resume .resume-item li {
+  list-style: none;
+}
 
 /*--------------------------------------------------------------
 # Portfolio
