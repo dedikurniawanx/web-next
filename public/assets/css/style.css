@@ -362,7 +362,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -381,7 +381,7 @@ section {
   color: #45505b;
 }
 
-.section-title h2::before {
+/* .section-title h2::before {
   content: "";
   position: absolute;
   display: block;
@@ -390,7 +390,7 @@ section {
   background: #ddd;
   bottom: 1px;
   left: calc(50% - 60px);
-}
+} */
 
 /* .section-title h2::after {
   content: "";
@@ -412,8 +412,8 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #728394;
+  font-size: 20px;
+  color: #3d4145;
 }
 
 .about .content ul {

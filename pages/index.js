@@ -59,12 +59,6 @@ export default function Home() {
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>About</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
             </div>
             <div className="row">
               <div className="col-lg-4">
@@ -74,8 +68,7 @@ export default function Home() {
                 <h3>Designer &amp; Web Developer</h3>
                 <p className="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.≈
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
@@ -141,23 +134,10 @@ export default function Home() {
             </div>
             <div className="row skills-content">
               <div className="col-lg-12">
+                <div></div>
                 <div className="progress">
                   <span className="skill">
-                    HTML <i className="val">70%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={70}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    CSS <i className="val">60%</i>
+                    HTML <i className="val"></i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
@@ -171,7 +151,21 @@ export default function Home() {
                 </div>
                 <div className="progress">
                   <span className="skill">
-                    JavaScript <i className="val">40%</i>
+                    CSS <i className="val"></i>
+                  </span>
+                  <div className="progress-bar-wrap">
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      aria-valuenow={50}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                    />
+                  </div>
+                </div>
+                <div className="progress">
+                  <span className="skill">
+                    JavaScript <i className="val"></i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
