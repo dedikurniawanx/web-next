@@ -249,30 +249,16 @@ export default function Home() {
                 <div className="col-lg-6">
                   <h3 className="resume-title">Work Experience</h3>
                   <div className="resume-item">
-                    <h4>Senior graphic design specialist</h4>
-                    <h5>2019 - Present</h5>
+                    <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
+                    <h5>2017</h5>
                     <p>
-                      <em>Experion, New York, NY </em>
+                      <em>Purwoharjo, Banyuwangi</em>
                     </p>
                     <ul>
                       <li>
                         Lead in the design, development, and implementation of
                         the graphic, layout, and production communication
                         materials
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="resume-item">
-                    <h4>Graphic design specialist</h4>
-                    <h5>2017 - 2018</h5>
-                    <p>
-                      <em>Stepping Stone Advertising, New York, NY</em>
-                    </p>
-                    <ul>
-                      <li>
-                        Developed numerous marketing programs (logos,
-                        brochures,infographics, presentations, and
-                        advertisements).
                       </li>
                     </ul>
                   </div>
