@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-lg-4">
-                <img src="assets/img/ultramen.webp" className="img-fluid" alt />
+                <img src="assets/img/ultramen.png" className="img-fluid" alt />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Designer &amp; Web Developer</h3>
