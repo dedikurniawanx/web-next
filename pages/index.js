@@ -567,7 +567,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer id="footer">
+      {/* <footer id="footer">
         <div className="container">
           <div className="copyright text-center">
             © Copyright{" "}
@@ -580,7 +580,7 @@ export default function Home() {
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
