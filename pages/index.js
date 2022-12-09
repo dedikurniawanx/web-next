@@ -150,25 +150,34 @@ export default function Home() {
               </p>
             </div>
             <div className="row skills-content justify-content-center">
-              <div className="col-md-7">
-                <img
-                  className="m-img"
-                  src="/assets/img/css_icon.webp"
-                  height={100}
-                  width={100}
-                ></img>
-                <img
-                  className="m-img"
-                  src="/assets/img/html_icon.webp"
-                  height={100}
-                  width={100}
-                ></img>
-                <img
-                  className="m-img"
-                  src="/assets/img/javascript_icon.webp"
-                  height={90}
-                  width={90}
-                ></img>
+              <div className="col-md-9 row">
+                <div className="col-md-4 d-flex justify-content-center flex-column align-items-center ">
+                  <img
+                    className="m-img"
+                    src="/assets/img/css_icon.webp"
+                    height={100}
+                    width={100}
+                  ></img>
+                  <p className="text-center">Css</p>
+                </div>
+                <div className="col-md-4 d-flex justify-content-center flex-column align-items-center ">
+                  <img
+                    className="m-img"
+                    src="/assets/img/html_icon.webp"
+                    height={100}
+                    width={100}
+                  ></img>
+                  <p className="text-center">Html</p>
+                </div>
+                <div className="col-md-4 d-flex justify-content-center flex-column align-items-center ">
+                  <img
+                    className="m-img"
+                    src="/assets/img/javascript_icon.webp"
+                    height={80}
+                    width={80}
+                  ></img>
+                  <p className="text-center">Javascript</p>
+                </div>
               </div>
 
               {/* <div className="col-lg-4">
