@@ -39,16 +39,33 @@ export default function Home() {
             />
           </p>
           <div className="social-links">
-            <a href="#" className="facebook">
-              <i className="bx bxl-facebook" />
-            </a>
-            <a href="#" className="instagram">
+            <a
+              href="https://www.instagram.com/xdkurniawn/"
+              target="_blank"
+              className="instagram"
+            >
               <i className="bx bxl-instagram" />
             </a>
-            <a href="#" className="linkedin">
+            <a
+              href="https://www.linkedin.com/in/dedi-kurniawan-724094259/"
+              target="_blank"
+              className="linkedin"
+            >
               <i className="bx bxl-linkedin" />
             </a>
-            <a href="#" className="twitter">
+            <a
+              href="https://github.com/dedikurniawanx"
+              target="_blank"
+              className="github"
+            >
+              <i className="bx bxl-github" />
+            </a>
+
+            <a
+              href="https://twitter.com/xdkurniawn"
+              target="_blank"
+              className="twitter"
+            >
               <i className="bx bxl-twitter" />
             </a>
           </div>
@@ -132,52 +149,37 @@ export default function Home() {
                 Quia fugiat sit in iste officiis commodi quidem hic quas.
               </p>
             </div>
-            <div className="row skills-content">
-              <div className="col-lg-12">
-                <div></div>
-                <div className="progress">
-                  <span className="skill">
-                    HTML <i className="val"></i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={60}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    CSS <i className="val"></i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={50}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    JavaScript <i className="val"></i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={40}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
+            <div className="row skills-content justify-content-center">
+              <div className="col-md-7">
+                <img
+                  className="m-img"
+                  src="/assets/img/css_icon.webp"
+                  height={100}
+                  width={100}
+                ></img>
+                <img
+                  className="m-img"
+                  src="/assets/img/html_icon.webp"
+                  height={100}
+                  width={100}
+                ></img>
+                <img
+                  className="m-img"
+                  src="/assets/img/javascript_icon.webp"
+                  height={90}
+                  width={90}
+                ></img>
               </div>
+
+              {/* <div className="col-lg-4">
+                <img src="/assets/img/css_icon.webp"></img>
+              </div>
+              <div className="col-lg-4">
+                <img src="/assets/img/css_icon.webp"></img>
+              </div>
+              <div className="col-lg-4">
+                <img src="/assets/img/css_icon.webp"></img>
+              </div> */}
             </div>
           </div>
         </section>
