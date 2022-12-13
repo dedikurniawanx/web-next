@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-lg-4">
-                <img src="assets/img/ultramen.png" className="img-fluid" alt />
+                <img src="assets/img/ultramen.webp" className="img-fluid" alt />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Designer &amp; Web Developer</h3>
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="col-md-3 d-flex justify-content-center align-items-center  flex-column ">
                   <img
                     className="m-img"
-                    src="/assets/img/boostrap.png"
+                    src="/assets/img/boostrap.webp"
                     height={80}
                     width={80}
                   ></img>
@@ -185,7 +185,7 @@ export default function Home() {
                     height={80}
                     width={80}
                   ></img>
-                  <p className="text-center">Javascript</p>
+                  <p className="text-center">JavaScript</p>
                 </div>
               </div>
             </div>
@@ -286,7 +286,39 @@ export default function Home() {
               <div className="col-lg-4 col-md-6">
                 <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
                   <img
-                    src="assets/img/kobo.jpeg"
+                    src="assets/img/nextjs.webp"
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
+                  <img
+                    src="assets/img/nextjs.webp"
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
+                  <img
+                    src="assets/img/nextjs.webp"
                     className="card-img-top"
                     alt="..."
                   />
