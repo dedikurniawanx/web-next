@@ -9,6 +9,38 @@ export default function Blogs({ blog }) {
           <ul>
             <li>
               <Link href="/">
+                <a href="#hero" className="nav-link scrollto">
+                  <i className="bx bx-home" /> <span>Home</span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#about">
+                <a className="nav-link scrollto">
+                  <i className="bx bx-user" /> <span>About</span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#resume">
+                <a className="nav-link scrollto">
+                  <i className="bx bx-file-blank" /> <span>Resume</span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <a href="#/blog" className="nav-link scrollto active">
+                <i className="bx bx-book-content" /> <span>Blog</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      {/* <header id="header" className="d-flex flex-column justify-content-center">
+        <nav id="navbar" className="navbar nav-menu">
+          <ul>
+            <li>
+              <Link href="/">
                 <a href="#hero" className="nav-link scrolltop">
                   <i className="bx bx-home" /> <span>Home</span>
                 </a>
@@ -35,7 +67,7 @@ export default function Blogs({ blog }) {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <main id="main">
         <section id="#blog" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">

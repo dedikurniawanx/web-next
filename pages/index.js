@@ -150,10 +150,10 @@ export default function Home() {
             <div className="section-title">
               <h2>Skills</h2>
               <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                vulputate sem felis, a ullamcorper odio blandit sit amet.
+                Vestibulum fermentum risus lorem, ullamcorper luctus metus
+                sollicitudin luctus. Cras sed risus.
               </p>
             </div>
             <div className="row skills-content justify-content-center">
@@ -262,9 +262,9 @@ export default function Home() {
                   <h3 className="resume-title">Work Experience</h3>
                   <div className="resume-item">
                     <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
-                    <h5>2017</h5>
+                    <h5>2010 - 2014</h5>
                     <p>
-                      <em>Purwoharjo, Banyuwangi</em>
+                      <em>Rochester Institute of Technology, Rochester, NY</em>
                     </p>
                     <ul>
                       <li>
@@ -284,13 +284,14 @@ export default function Home() {
             <div className="section-title">
               <h2>Blog</h2>
               <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                sodales quam mi. Pellentesque sollicitudin laoreet consequat.
+                Vestibulum eu erat dictum, ornare nisl sit amet, scelerisque ex.
+                Pellentesque blandit blandit nisl in suscipit. Fusce tempor
+                tortor.
               </p>
             </div>
-            <div className="row mb-5">
+            {/* <div className="row mb-5">
               <div className="col-lg-4 col-md-6">
                 <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-3">
                   <img
@@ -307,7 +308,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="row mt-5">
               <div className="text-center">
                 <Link href="/blog">
@@ -322,9 +323,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <hr></hr>
       <footer id="footer">
-        <div className="container">
+        <div className="container mt-5">
           <div className="copyright text-center">
             © Copyright{" "}
             <strong>
