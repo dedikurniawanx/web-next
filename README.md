@@ -1,15 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Run Locally
 
-First, run the development server:
+Clone the project
 
 ```bash
-pnpm install
+  git clone https://github.com/dedikurniawanx/web-next.git
+```
 
-run
+Go to the project directory
 
-pnpm dev
+```bash
+  cd web-next
+```
+
+Install dependencies
+
+```bash
+  pnpm install
+```
+
+Start the server
+
+```bash
+  pnpm run develop
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
