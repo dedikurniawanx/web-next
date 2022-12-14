@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -6,23 +7,29 @@ export default function Home() {
         <nav id="navbar" className="navbar nav-menu">
           <ul>
             <li>
-              <a href="#hero" className="nav-link scrollto active">
-                <i className="bx bx-home" /> <span>Home</span>
-              </a>
+              <Link href="/">
+                <a href="#hero" className="nav-link scrolltop">
+                  <i className="bx bx-home" /> <span>Home</span>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="nav-link scrollto">
-                <i className="bx bx-user" /> <span>About</span>
-              </a>
+              <Link href="/#about">
+                <a className="nav-link scrollto">
+                  <i className="bx bx-user" /> <span>About</span>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="#resume" className="nav-link scrollto">
-                <i className="bx bx-file-blank" /> <span>Resume</span>
-              </a>
+              <Link href="/#resume">
+                <a className="nav-link scrollto">
+                  <i className="bx bx-file-blank" /> <span>Resume</span>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" className="nav-link scrollto">
-                <i className="bx bx-book-content" /> <span>Portfolio</span>
+              <a href="/blog" className="nav-link scrollto">
+                <i className="bx bx-book-content" /> <span>Blog</span>
               </a>
             </li>
           </ul>
@@ -151,6 +158,15 @@ export default function Home() {
             </div>
             <div className="row skills-content justify-content-center">
               <div className="col-md-9 row">
+                <div className="col-md-3 d-flex justify-content-center align-items-center  flex-column ">
+                  <img
+                    className="m-img"
+                    src="/assets/img/html_icon.webp"
+                    height={80}
+                    width={80}
+                  ></img>
+                  <p className="text-center">HTML</p>
+                </div>
                 <div className="col-md-3 d-flex justify-content-center align-items-center flex-column ">
                   <img
                     className="m-img"
@@ -160,10 +176,11 @@ export default function Home() {
                   ></img>
                   <p className="text-center">Css</p>
                 </div>
+
                 <div className="col-md-3 d-flex justify-content-center align-items-center  flex-column ">
                   <img
                     className="m-img"
-                    src="/assets/img/html_icon.webp"
+                    src="/assets/img/boostrap.webp"
                     height={80}
                     width={80}
                   ></img>
@@ -172,20 +189,11 @@ export default function Home() {
                 <div className="col-md-3 d-flex justify-content-center align-items-center  flex-column ">
                   <img
                     className="m-img"
-                    src="/assets/img/boostrap.webp"
-                    height={80}
-                    width={80}
-                  ></img>
-                  <p className="text-center">Html</p>
-                </div>
-                <div className="col-md-3 d-flex justify-content-center align-items-center  flex-column ">
-                  <img
-                    className="m-img"
                     src="/assets/img/javascript_icon.webp"
                     height={80}
                     width={80}
                   ></img>
-                  <p className="text-center">JavaScript</p>
+                  <p className="text-center">Javascript</p>
                 </div>
               </div>
             </div>
@@ -274,7 +282,7 @@ export default function Home() {
         <section id="portfolio" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2>Portfolio</h2>
+              <h2>Blog</h2>
               <p>
                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur
                 ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
@@ -299,329 +307,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
-                  <img
-                    src="assets/img/nextjs.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
-                  <img
-                    src="assets/img/nextjs.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div className="row">
-              <div
-                className="col-lg-12 d-flex justify-content-center"
-                data-aos="fade-up"
-                data-aos-delay={80}
-              ></div>
-            </div>
-            <div
-              className="row portfolio-container"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-1.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-1.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 1"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-2.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-2.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-3.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-3.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 2"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-4.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 2</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-4.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 2"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-5.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 2</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-5.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 2"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-6.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-6.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 3"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-7.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 1</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-7.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 1"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-8.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 3</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-8.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 3"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-9.jpg"
-                    className="img-fluid"
-                    alt
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-9.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i className="bx bx-plus" />
-                      </a>
-                      <a
-                        href="portfolio-details.html"
-                        className="portfolio-details-lightbox"
-                        data-glightbox="type: external"
-                        title="Portfolio Details"
-                      >
-                        <i className="bx bx-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+            <div className="row justify-content-center">
+              <div className="col-md-1 col-sm-3 col-4 col-lg-1 col-xl-1">
+                <button type="button" class="btn btn-primary">
+                  More
+                </button>
               </div>
             </div>
           </div>
