@@ -29,7 +29,7 @@ export default function Blogs({ blog }) {
               </Link>
             </li>
             <li>
-              <a href="/blog" className="nav-link scrollto">
+              <a href="/#blog" className="nav-link scrollto">
                 <i className="bx bx-book-content" /> <span>Blog</span>
               </a>
             </li>
@@ -37,7 +37,7 @@ export default function Blogs({ blog }) {
         </nav>
       </header>
       <main id="main">
-        <section id="portfolio" className="portfolio section-bg">
+        <section id="blog" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Blog</h2>
@@ -73,20 +73,6 @@ export default function Blogs({ blog }) {
           </div>
         </section>
       </main>
-      {/* <footer id="footer">
-          <div className="container">
-            <div className="copyright text-center">
-              © Copyright{" "}
-              <strong>
-                <span>MyResume</span>
-              </strong>
-              . All Rights Reserved
-            </div>
-            <div className="credits text-center">
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </footer> */}
     </div>
   );
 }

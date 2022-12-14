@@ -8,7 +8,7 @@ export default function Home() {
           <ul>
             <li>
               <Link href="/">
-                <a href="#hero" className="nav-link scrolltop">
+                <a href="#hero" className="nav-link scrollto">
                   <i className="bx bx-home" /> <span>Home</span>
                 </a>
               </Link>
@@ -28,7 +28,7 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <a href="/blog" className="nav-link scrollto">
+              <a href="/#blog" className="nav-link scrollto">
                 <i className="bx bx-book-content" /> <span>Blog</span>
               </a>
             </li>
@@ -42,7 +42,7 @@ export default function Home() {
             I'm
             <span
               className="typed"
-              data-typed-items="Developer, Designer, Photographer"
+              data-typed-items="Designer, Developer, Photographer"
             />
           </p>
           <div className="social-links">
@@ -279,7 +279,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="portfolio" className="portfolio section-bg">
+        <section id="blog" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Blog</h2>
@@ -290,12 +290,12 @@ export default function Home() {
                 Quia fugiat sit in iste officiis commodi quidem hic quas.
               </p>
             </div>
-            <div className="row">
+            <div className="row mb-5">
               <div className="col-lg-4 col-md-6">
-                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
+                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-3">
                   <img
                     src="assets/img/nextjs.webp"
-                    className="card-img-top"
+                    className="card-img-top rounded-0"
                     alt="..."
                   />
                   <div className="card-body">
@@ -308,17 +308,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="row justify-content-center">
-              <div className="col-md-1 col-sm-3 col-4 col-lg-1 col-xl-1">
-                <button type="button" class="btn btn-primary">
-                  More
-                </button>
+            <div className="row mt-5">
+              <div className="text-center">
+                <Link href="/blog">
+                  <a href="#blog" className="nav-link scrollto">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                      Show more
+                    </button>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
         </section>
       </main>
-      {/* <footer id="footer">
+      <hr></hr>
+      <footer id="footer">
         <div className="container">
           <div className="copyright text-center">
             © Copyright{" "}
@@ -331,7 +336,7 @@ export default function Home() {
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
