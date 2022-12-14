@@ -311,7 +311,7 @@ export default function Home() {
             <div className="row mt-5">
               <div className="text-center">
                 <Link href="/blog">
-                  <a href="#blog" className="nav-link scrollto">
+                  <a href="#">
                     <button type="button" class="btn btn-primary rounded-pill">
                       Show more
                     </button>

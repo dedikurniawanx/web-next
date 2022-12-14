@@ -29,7 +29,7 @@ export default function Blogs({ blog }) {
               </Link>
             </li>
             <li>
-              <a href="/#blog" className="nav-link scrollto">
+              <a href="/#blog" className="nav-link scrollto active">
                 <i className="bx bx-book-content" /> <span>Blog</span>
               </a>
             </li>
@@ -37,7 +37,7 @@ export default function Blogs({ blog }) {
         </nav>
       </header>
       <main id="main">
-        <section id="blog" className="portfolio section-bg">
+        <section id="#blog" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Blog</h2>
@@ -54,16 +54,18 @@ export default function Blogs({ blog }) {
                 // console.log(`${image[1]}-${image[2]}.${image[3]}`);
 
                 return (
-                  <div className="col-lg-4 col-md-6">
-                    <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
-                      <img
-                        src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="card-body">
-                        <h5 class="card-title">{item.name}</h5>
-                        <p className="card-text">{item.description}</p>
+                  <div className="row justify-content-center">
+                    <div className="col-lg-7 col-md-6 align-items-center">
+                      <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
+                        <img
+                          src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
+                          className="card-img-top"
+                          alt="..."
+                        />
+                        <div className="card-body">
+                          <h5 class="card-title">{item.name}</h5>
+                          <p className="card-text">{item.description}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
