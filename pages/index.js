@@ -303,7 +303,7 @@ export default function Home({ blog }) {
                     <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
                       <img
                         src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
-                        className="card-img-top"
+                        className="card-img-top rounded-0"
                         alt="..."
                       />
                       <div className="card-body">
