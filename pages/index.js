@@ -1,5 +1,6 @@
+import axios from "axios";
 import Link from "next/link";
-export default function Home() {
+export default function Home({ blog }) {
   return (
     <div>
       <i className="bi bi-list mobile-nav-toggle d-lg-none" />
@@ -104,16 +105,17 @@ export default function Home() {
 
                       <li>
                         <i className="bi bi-chevron-right" />
-                        <strong>Website:</strong> <span>www.example.com</span>
+                        <strong>Website:</strong>{" "}
+                        <span>www.dedikurniawan.xyz</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />
-                        <strong>Phone:</strong> <span>+62345678</span>
+                        <strong>Phone:</strong> <span>+6234567890</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />
                         <strong>Email:</strong>
-                        <span>email@example.com</span>
+                        <span>dedikurniawanx@gmail.com</span>
                       </li>
                     </ul>
                   </div>
@@ -261,8 +263,8 @@ export default function Home() {
                 <div className="col-lg-6">
                   <h3 className="resume-title">Work Experience</h3>
                   <div className="resume-item">
-                    <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
-                    <h5>2010 - 2014</h5>
+                    {/* <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
+                    <h5>2010 - 2014</h5> */}
                     <p>
                       <em>Rochester Institute of Technology, Rochester, NY</em>
                     </p>
@@ -291,6 +293,28 @@ export default function Home() {
                 tortor.
               </p>
             </div>
+            <div className="row justify-content-center">
+              {blog.result.map((item) => {
+                const image = item.poster.asset._ref.split("-");
+                console.log(`${image[1]}-${image[2]}.${image[3]}`);
+
+                return (
+                  <div className="col-lg-6 col-md-6">
+                    <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
+                      <img
+                        src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body">
+                        <h5 class="card-title">{item.name}</h5>
+                        <p className="card-text">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
             {/* <div className="row mb-5">
               <div className="col-lg-4 col-md-6">
                 <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-3">
@@ -313,9 +337,9 @@ export default function Home() {
               <div className="text-center">
                 <Link href="/blog">
                   <a href="#">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                      Show more
-                    </button>
+                    {/* <button type="button" class="btn btn-primary rounded-pill">
+                      Show
+                    </button> */}
                   </a>
                 </Link>
               </div>
@@ -332,11 +356,20 @@ export default function Home() {
             </strong>
             . All Rights Reserved
           </div>
-          <div className="credits text-center">
+          {/* <div className="credits text-center">
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>
   );
+}
+export async function getServerSideProps(context) {
+  const response = await axios.get(
+    "https://sbpqwv31.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blog%22%20%5D%7B%0A%20%20_id%2C%0A%20%20name%2C%0A%20%20%20%20description%2C%0A%20%20poster%2C%0A%20%20%0A%7D"
+  );
+  const blog = await response.data;
+  return {
+    props: { blog }, // will be passed to the page component as props
+  };
 }
