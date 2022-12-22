@@ -80,24 +80,22 @@ export default function Blogs({ blog }) {
                 Quia fugiat sit in iste officiis commodi quidem hic quas.
               </p>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               {blog.result.map((item) => {
                 const image = item.poster.asset._ref.split("-");
-                // console.log(`${image[1]}-${image[2]}.${image[3]}`);
+                console.log(`${image[1]}-${image[2]}.${image[3]}`);
 
                 return (
-                  <div className="row justify-content-center">
-                    <div className="col-lg-7 col-md-6 align-items-center">
-                      <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded">
-                        <img
-                          src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <div className="card-body">
-                          <h5 class="card-title">{item.name}</h5>
-                          <p className="card-text">{item.description}</p>
-                        </div>
+                  <div className="col-lg-6 col-md-6">
+                    <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
+                      <img
+                        src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
+                        className="card-img-top rounded-0"
+                        alt="..."
+                      />
+                      <div className="card-body">
+                        <h5 class="card-title">{item.name}</h5>
+                        <p className="card-text">{item.description}</p>
                       </div>
                     </div>
                   </div>

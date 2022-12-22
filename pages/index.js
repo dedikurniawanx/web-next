@@ -315,24 +315,6 @@ export default function Home({ blog }) {
                 );
               })}
             </div>
-            {/* <div className="row mb-5">
-              <div className="col-lg-4 col-md-6">
-                <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-3">
-                  <img
-                    src="assets/img/nextjs.webp"
-                    className="card-img-top rounded-0"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="row mt-5">
               <div className="text-center">
                 <Link href="/blog">
