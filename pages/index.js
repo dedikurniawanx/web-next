@@ -1,6 +1,6 @@
 import axios from "axios";
 import Link from "next/link";
-export default function Home({ blog }) {
+export default function Home({ blog, portofolio }) {
   return (
     <div>
       <i className="bi bi-list mobile-nav-toggle d-lg-none" />
@@ -87,7 +87,7 @@ export default function Home({ blog }) {
             </div>
             <div className="row">
               <div className="col-lg-4">
-                <img src="assets/img/ultramen.webp" className="img-fluid" alt />
+                <img src="assets/img/saya.webp" className="img-fluid" alt />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Designer &amp; Web Developer</h3>
@@ -287,10 +287,8 @@ export default function Home({ blog }) {
               <p>Ini Adalah Tugas Desain Yang Pernah Saya Buat</p>
             </div>
             <div className="row justify-content-center">
-              {blog.result.map((item) => {
-                const image = item.poster.asset._ref.split("-");
-                console.log(`${image[1]}-${image[2]}.${image[3]}`);
-
+              {portofolio.result.map((item) => {
+                const image = item.image.asset._ref.split("-");
                 return (
                   <div className="col-lg-6 col-md-6">
                     <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
@@ -382,8 +380,13 @@ export async function getServerSideProps(context) {
   const response = await axios.get(
     "https://sbpqwv31.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blog%22%20%5D%7B%0A%20%20_id%2C%0A%20%20name%2C%0A%20%20%20%20description%2C%0A%20%20poster%2C%0A%20%20%0A%7D"
   );
+  const responses = await axios.get(
+    "https://sbpqwv31.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22portofolio%22%5D"
+  );
+  const portofolio = await responses.data;
   const blog = await response.data;
+  console.log(portofolio);
   return {
-    props: { blog }, // will be passed to the page component as props
+    props: { blog, portofolio }, // will be passed to the page component as props
   };
 }
