@@ -92,29 +92,34 @@ export default function Home({ blog, portofolio }) {
               <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Designer &amp; Web Developer</h3>
                 <p className="">
-                  Halo perkenalkan saya Dedi Kurniawan, Saya adalah mahasiswa
-                  Teknik Informatka tahun 2020
+                  Halo perkenalkan, nama saya Dedi Kurniawan, saya adalah
+                  mahasiswa jurusan Teknik Informatka tahun 2020. Teknik
+                  Informatika merupakan bidang yang sangat menyenangkan terutama
+                  bagi mereka yang memiliki minat dan hobi di bidang teknologi.
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
                     <ul>
                       <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>Birthday:</strong> <span>June 2001</span>
-                      </li>
-                      <li>
-                        <i className="bi bi-chevron-right" />
+                        <i className="" />
                         <strong>City:</strong>
                         <span>Banyuwangi, Jawatimur, Indonesia</span>
                       </li>
                       <li>
-                        <i className="bi bi-chevron-right" />{" "}
-                        <strong>Age:</strong>
+                        <i className="" /> <strong>Hoby:</strong>
+                        <span>Maen Game, Fotografi</span>
+                      </li>
+                      <li>
+                        <i className="" />
+                        <strong>Birthday:</strong> <span>June 2001</span>
+                      </li>
+                      <li>
+                        <i className="" /> <strong>Age:</strong>
                         <span>21</span>
                       </li>
 
                       <li>
-                        <i className="bi bi-chevron-right" />
+                        <i className="" />
                         <strong>Freelance:</strong> <span>-</span>
                       </li>
                     </ul>
@@ -298,8 +303,9 @@ export default function Home({ blog, portofolio }) {
                         alt="..."
                       />
                       <div className="card-body">
-                        <h5 class="card-title">{item.name}</h5>
-                        <p className="card-text">{item.description}</p>
+                        <h5 class="card-title text-center font-weight-bold pt-3">
+                          {item.name}
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -329,7 +335,7 @@ export default function Home({ blog, portofolio }) {
                 console.log(`${image[1]}-${image[2]}.${image[3]}`);
 
                 return (
-                  <div className="col-lg-6 col-md-6">
+                  <div className="col-lg-5 col-md-6">
                     <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
                       <img
                         src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
@@ -337,7 +343,10 @@ export default function Home({ blog, portofolio }) {
                         alt="..."
                       />
                       <div className="card-body">
-                        <h5 class="card-title">{item.name}</h5>
+                        <h5 class="card-title font-weight-bold">
+                          {" "}
+                          <strong>{item.name}</strong>
+                        </h5>
                         <p className="card-text">{item.description}</p>
                       </div>
                     </div>
