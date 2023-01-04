@@ -28,11 +28,11 @@ export default function Home({ blog }) {
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="/#blog" className="nav-link scrollto">
                 <i className="bx bx-book-content" /> <span>Blog</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -91,12 +91,35 @@ export default function Home({ blog }) {
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Designer &amp; Web Developer</h3>
-                <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="">
+                  Halo perkenalkan saya Dedi Kurniawan, Saya adalah mahasiswa
+                  Teknik Informatka tahun 2020
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
+                    <ul>
+                      <li>
+                        <i className="bi bi-chevron-right" />
+                        <strong>Birthday:</strong> <span>June 2001</span>
+                      </li>
+                      <li>
+                        <i className="bi bi-chevron-right" />
+                        <strong>City:</strong>
+                        <span>Banyuwangi, Jawatimur, Indonesia</span>
+                      </li>
+                      <li>
+                        <i className="bi bi-chevron-right" />{" "}
+                        <strong>Age:</strong>
+                        <span>21</span>
+                      </li>
+
+                      <li>
+                        <i className="bi bi-chevron-right" />
+                        <strong>Freelance:</strong> <span>-</span>
+                      </li>
+                    </ul>
+                  </div>
+                  {/* <div className="col-lg-6">
                     <ul>
                       <li>
                         <i className="bi bi-chevron-right" />
@@ -118,30 +141,7 @@ export default function Home({ blog }) {
                         <span>dedikurniawanx@gmail.com</span>
                       </li>
                     </ul>
-                  </div>
-                  <div className="col-lg-6">
-                    <ul>
-                      <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>Birthday:</strong> <span>11 June 2001</span>
-                      </li>
-                      <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>City:</strong>
-                        <span>Banyuwangi, Jawatimur, Indonesia</span>
-                      </li>
-                      <li>
-                        <i className="bi bi-chevron-right" />{" "}
-                        <strong>Age:</strong>
-                        <span>21</span>
-                      </li>
-
-                      <li>
-                        <i className="bi bi-chevron-right" />
-                        <strong>Freelance:</strong> <span>-</span>
-                      </li>
-                    </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -150,7 +150,6 @@ export default function Home({ blog }) {
         <section id="skills" className="skills section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2>Skills</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 vulputate sem felis, a ullamcorper odio blandit sit amet.
@@ -201,7 +200,7 @@ export default function Home({ blog }) {
             </div>
           </div>
         </section>
-        <section id="resume" className="resume">
+        {/* <section id="resume" className="resume">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Sumary</h2>
@@ -263,8 +262,8 @@ export default function Home({ blog }) {
                 <div className="col-lg-6">
                   <h3 className="resume-title">Work Experience</h3>
                   <div className="resume-item">
-                    {/* <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
-                    <h5>2010 - 2014</h5> */}
+                    <h4>Praktek Kerja Lapangan di percetakan Mca.com</h4>
+                    <h5>2010 - 2014</h5>
                     <p>
                       <em>Rochester Institute of Technology, Rochester, NY</em>
                     </p>
@@ -280,18 +279,51 @@ export default function Home({ blog }) {
               </div>
             </div>
           </div>
-        </section>
-        <section id="blog" className="portfolio section-bg">
+        </section> */}
+        <section id="resume" className="portfolio section-bg">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title">
+              <h2>Portofolio</h2>
+              <p>Ini Adalah Tugas Desain Yang Pernah Saya Buat</p>
+            </div>
+            <div className="row justify-content-center">
+              {blog.result.map((item) => {
+                const image = item.poster.asset._ref.split("-");
+                console.log(`${image[1]}-${image[2]}.${image[3]}`);
+
+                return (
+                  <div className="col-lg-6 col-md-6">
+                    <div className="card shadow-sm p-3 mb-5 m-2 bg-body rounded-0">
+                      <img
+                        src={`https://cdn.sanity.io/images/sbpqwv31/production/${image[1]}-${image[2]}.${image[3]}`}
+                        className="card-img-top rounded-0"
+                        alt="..."
+                      />
+                      <div className="card-body">
+                        <h5 class="card-title">{item.name}</h5>
+                        <p className="card-text">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row mt-5">
+              <div className="text-center">
+                <Link href="/blog">
+                  <a href="#">
+                    {/* <button type="button" class="btn btn-primary rounded-pill">
+                      Show
+                    </button> */}
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Blog</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                sodales quam mi. Pellentesque sollicitudin laoreet consequat.
-                Vestibulum eu erat dictum, ornare nisl sit amet, scelerisque ex.
-                Pellentesque blandit blandit nisl in suscipit. Fusce tempor
-                tortor.
-              </p>
+              <p>Artikel Terbaru Saya</p>
             </div>
             <div className="row justify-content-center">
               {blog.result.map((item) => {
