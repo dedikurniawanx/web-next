@@ -14,20 +14,6 @@ export default function Home({ blog, portofolio }) {
                 </a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/#about">
-                <a className="nav-link scrollto">
-                  <i className="bx bx-user" /> <span>About</span>
-                </a>
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link href="/#resume">
-                <a className="nav-link scrollto">
-                  <i className="bx bx-file-blank" /> <span>Resume</span>
-                </a>
-              </Link>
-            </li> */}
             <li>
               <a href="/#portofolio" className="nav-link scrollto">
                 <i className="bx bx-book-content" /> <span>Portofolio</span>
@@ -65,7 +51,7 @@ export default function Home({ blog, portofolio }) {
         <section id="portofolio" className="portfolio section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2>Come see my portfolio</h2>
+              <h2 className="resume-title">Come see my portfolio</h2>
             </div>
             <div className="row justify-content-center">
               {portofolio.result.map((item) => {
@@ -78,52 +64,10 @@ export default function Home({ blog, portofolio }) {
                         className="card-img-top rounded-0"
                         alt="..."
                       />
-                      {/* <div className="card-body">
-                        <h5 class="card-title text-center font-weight-bold pt-3">
-                          {item.name}
-                        </h5>
-                      </div> */}
                     </div>
                   </div>
                 );
               })}
-            </div>
-            <div className="row mt-5">
-              <div className="text-center">
-                <Link href="/blog">
-                  <a href="#">
-                    {/* <button type="button" class="btn btn-primary rounded-pill">
-                      Show
-                    </button> */}
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="resume" className="resume">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title">
-              <h2>Sumary</h2>
-              <div className="row">
-                <div className="col-lg">
-                  <h3 className="resume-title">Work Experience</h3>
-                  <div className="resume-item">
-                    <h4>-</h4>
-                    <h5>2010 - 2014</h5>
-                    <p>
-                      <em>Rochester Institute of Technology, Rochester, NY</em>
-                    </p>
-                    <ul>
-                      <li>
-                        Lead in the design, development, and implementation of
-                        the graphic, layout, and production communication
-                        materials
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
