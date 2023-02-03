@@ -11,8 +11,11 @@ export default function Document() {
             name="viewport"
           />
           <title>Dedi Kurniawan</title>
-          <meta content name="description" />
-          <meta content name="keywords" />
+          <meta
+            content
+            name="Dedi Kurniawanx is a Designer and Front-End Developer. Passionate Front-End Development."
+          />
+          <meta content name="dedikurniawanx" />
           <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"

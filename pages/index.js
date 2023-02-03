@@ -57,6 +57,12 @@ export default function Home({ blog, portofolio }) {
                   I can help everyone build their business. It's such a
                   happiness for me. so, let me help you!
                 </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill"
+                >
+                  Contact Me
+                </button>
               </div>
               <div className="col-lg-5">
                 <img src="/assets/img/nobitha.png" alt srcSet />
